@@ -23,8 +23,8 @@ The program executes and then enters into the Controller.
 
 Once in the Controller the User is prompted to enter data. This is where the operation and 2 numbers are inputed.
 
-![Controller] (calc_controller)
+![Controller] (calc_controller.png)
 
 The Controller calls the respective method and passes the numbers to those methods. The methods print the solution and again call the Controller.
 
-![Methods] (calc_methods)
+![Methods] (calc_methods.png)
