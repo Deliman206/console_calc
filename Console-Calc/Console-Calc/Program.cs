@@ -62,7 +62,7 @@ namespace Console_Calc
         }
         static decimal Divide(decimal num1, decimal num2)
         {
-            decimal solution = (decimal) num1 / num2;
+            decimal solution = num1 / num2;
             Console.WriteLine($"The division of {num1} & {num2} is {solution}");
             return Ops();
         }
