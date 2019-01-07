@@ -14,19 +14,19 @@ namespace Console_Calc
             Ops();
         }
 
-        static int Ops()
+        static decimal Ops()
         {
-            int num1 = 0, num2 = 0;
+            decimal num1 = 0, num2 = 0;
 
             Console.WriteLine("What operation would you like to use?");
             Console.WriteLine("You can type Add, Subtract, Multiply, Divide");
             string answer = Console.ReadLine();
 
             Console.WriteLine("Your first number?");
-            Int32.TryParse(Console.ReadLine(), out num1);
+            decimal.TryParse(Console.ReadLine(), out num1);
 
             Console.WriteLine("Your second number?");
-            Int32.TryParse(Console.ReadLine(), out num2);
+            decimal.TryParse(Console.ReadLine(), out num2);
 
             switch (answer)
             {
@@ -42,25 +42,25 @@ namespace Console_Calc
                     return Ops();
             }
         }
-        static int Add(int num1, int num2)
+        static decimal Add(decimal num1, decimal num2)
         {
-            int solution = num1 + num2;
+            decimal solution = num1 + num2;
             Console.WriteLine($"The sum of {num1} & {num2} is {solution}");
             return Ops();
         }
-        static int Subtract(int num1, int num2)
+        static decimal Subtract(decimal num1, decimal num2)
         {
-            int solution = num1 - num2;
+            decimal solution = num1 - num2;
             Console.WriteLine($"The difference of {num1} & {num2} is {solution}");
             return Ops();
         }
-        static int Multiply(int num1, int num2)
+        static decimal Multiply(decimal num1, decimal num2)
         {
-            int solution = num1 * num2;
+            decimal solution = num1 * num2;
             Console.WriteLine($"The product of {num1} & {num2} is {solution}");
             return Ops();
         }
-        static int Divide(int num1, int num2)
+        static decimal Divide(decimal num1, decimal num2)
         {
             decimal solution = (decimal) num1 / num2;
             Console.WriteLine($"The division of {num1} & {num2} is {solution}");
