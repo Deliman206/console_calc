@@ -19,7 +19,7 @@ OUT - The solution of the opertion on the numbers
 The entry point for this program is shown in the following code.
 The program executes and then enters into the Controller.
 
- ![MainEntry](calc_controller.png)
+ ![MainEntry](calc_main.png)
 
 Once in the Controller the User is prompted to enter data. This is where the operation and 2 numbers are inputed.
 
